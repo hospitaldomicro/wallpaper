@@ -46,7 +46,7 @@ func getKDE() (string, error) {
 		return "", err
 	}
 
-	return "", errors.New("kde image not found")
+	return "", errors.New("imagem kde não encontrada")
 }
 
 func setKDE(path string) error {
@@ -86,6 +86,6 @@ func (mode Mode) getKDEString() string {
 	case Tile:
 		return "3"
 	default:
-		panic("invalid walllpaper mode")
+		panic("modo papel de parede inválido")
 	}
 }

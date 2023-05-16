@@ -82,6 +82,6 @@ func (mode Mode) getXFCEString() string {
 	case Tile:
 		return "2"
 	default:
-		panic("invalid wallpaper mode")
+		panic("modo papel de parede inválido")
 	}
 }

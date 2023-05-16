@@ -50,6 +50,6 @@ func (mode Mode) getGNOMEString() string {
 	case Tile:
 		return "wallpaper"
 	default:
-		panic("invalid wallpaper mode")
+		panic("modo papel de parede inválido")
 	}
 }

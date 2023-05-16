@@ -27,7 +27,7 @@ var Desktop = os.Getenv("XDG_CURRENT_DESKTOP")
 var DesktopSession = os.Getenv("DESKTOP_SESSION")
 
 // ErrUnsupportedDE is thrown when Desktop is not a supported desktop environment.
-var ErrUnsupportedDE = errors.New("your desktop environment is not supported")
+var ErrUnsupportedDE = errors.New("seu ambiente desktop não é suportado")
 
 func downloadImage(url string) (string, error) {
 	res, err := http.Get(url)
@@ -36,7 +36,7 @@ func downloadImage(url string) (string, error) {
 	}
 	defer res.Body.Close()
 	if res.StatusCode < 200 || res.StatusCode >= 300 {
-		return "", errors.New("non-200 status code")
+		return "", errors.New("código de status não 200")
 	}
 
 	cacheDir, err := getCacheDir()

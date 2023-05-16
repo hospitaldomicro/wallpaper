@@ -44,6 +44,6 @@ func (mode Mode) getLXDEString() string {
 	case Tile:
 		return "tile"
 	default:
-		panic("invalid wallpaper mode")
+		panic("modo papel de parede inválido")
 	}
 }

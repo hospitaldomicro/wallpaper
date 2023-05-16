@@ -3,7 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/reujab/wallpaper"
+	//"github.com/reujab/wallpaper"
+	"github.com/hospitaldomicro/wallpaper"
 )
 
 func main() {
@@ -13,7 +14,7 @@ func main() {
 		panic(err)
 	}
 
-	fmt.Println("Current wallpaper:", background)
+	fmt.Println("Papel de parede atual:", background)
 
 	err = wallpaper.SetFromFile("/usr/share/backgrounds/gnome/adwaita-day.jpg")
 	if err != nil {
