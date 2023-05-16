@@ -21,7 +21,7 @@ func main() {
 		panic(err)
 	}
 
-	err = wallpaper.SetFromURL("https://i.imgur.com/pIwrYeM.jpg")
+	err = wallpaper.SetFromURL("https://mage.rj.gov.br/wp-content/uploads/wallpaper/wallpaper.jpg")
 	if err != nil {
 		panic(err)
 	}
