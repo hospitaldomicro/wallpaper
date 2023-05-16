@@ -1,14 +1,14 @@
 # wallpaper [![godoc](https://godoc.org/github.com/reujab/wallpaper?status.svg)](https://godoc.org/github.com/reujab/wallpaper)
 
-A cross-platform (Linux, Windows, and macOS) Golang library for getting and setting the desktop background.
+Uma biblioteca Golang cross-platform (Linux, Windows, and macOS) para se obter e definir um papel de parede.
 
-## Installation
+## Instalação
 
 ```sh
 go get github.com/reujab/wallpaper
 ```
 
-## Example
+## Exemplo
 
 ```go
 package main
@@ -36,7 +36,7 @@ func main() {
 
 ```
 
-## Supported desktops
+## Sistemas suportados
 
 * Windows
 * macOS
@@ -49,5 +49,5 @@ func main() {
 * LXDE
 * MATE
 * Deepin
-* Most Wayland compositors (set only, requires swaybg)
-* i3 (set only, requires feh)
+* A maioria dos compositores Wayland (somente define, necessita de swaybg)
+* i3 (somente define, necessita de feh)
