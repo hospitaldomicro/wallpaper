@@ -1,14 +1,16 @@
+//go:build windows
 // +build windows
 
 package wallpaper
 
 import (
-	"golang.org/x/sys/windows/registry"
 	"os"
 	"strings"
 	"syscall"
 	"unicode/utf16"
 	"unsafe"
+
+	"golang.org/x/sys/windows/registry"
 )
 
 // https://msdn.microsoft.com/en-us/library/windows/desktop/ms724947.aspx
@@ -90,7 +92,7 @@ func SetMode(mode Mode) error {
 	case Crop:
 		style = "10"
 	default:
-		panic("invalid wallpaper mode")
+		panic("modo papel de parede inválido")
 	}
 	err = key.SetStringValue("WallpaperStyle", style)
 	if err != nil {
